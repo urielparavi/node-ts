@@ -1,4 +1,4 @@
-import express from 'express';
+import express, {} from 'express';
 import todoRoutes from './routes/todo.js';
 const app = express();
 app.use(express.json());

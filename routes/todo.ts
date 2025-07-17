@@ -1,5 +1,10 @@
-import express, { Request, Response } from 'express';
-import { addTodo, getTodo, getTodos, removeTodo, updateTodo } from '../data.js';
+import express from 'express';
+import { addTodo, getTodo, getTodos, removeTodo, updateTodo } from '../data.ts';
+
+enum TODO_TYPE {
+  BASIC,
+  URGENT,
+}
 
 const router = express.Router();
 

@@ -1,5 +1,10 @@
 import express from 'express';
 import { addTodo, getTodo, getTodos, removeTodo, updateTodo } from '../data.js';
+var TODO_TYPE;
+(function (TODO_TYPE) {
+    TODO_TYPE[TODO_TYPE["BASIC"] = 0] = "BASIC";
+    TODO_TYPE[TODO_TYPE["URGENT"] = 1] = "URGENT";
+})(TODO_TYPE || (TODO_TYPE = {}));
 const router = express.Router();
 // function handlePostTodos(req: Request, res: Response) {
 // }
